@@ -5,6 +5,12 @@ export const siteConfig = {
   preview: {
     enabled: true,
   },
+  social: {
+    facebook: "#",
+    instagram: "#",
+    yelp: "#",
+    youtube: "#",
+  },
 };
 
 // Utility function to reset preview dialog (for testing)

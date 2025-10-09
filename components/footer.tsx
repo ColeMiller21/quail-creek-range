@@ -1,5 +1,6 @@
-import Image from "next/image"
-import { MapPin, Phone, Mail, Facebook, Instagram } from "lucide-react"
+import Image from "next/image";
+import { MapPin, Phone, Mail, Facebook, Instagram } from "lucide-react";
+import { siteConfig } from "@/config/site";
 
 export default function Footer() {
   return (
@@ -11,18 +12,28 @@ export default function Footer() {
           {/* Brand */}
           <div>
             <div className="flex items-center gap-3 mb-4">
-              <Image src="/qcr-logo-white.png" alt="Quail Creek Range" width={48} height={48} className="w-12 h-12" />
-              <span className="font-serif font-semibold text-xl">Quail Creek Range</span>
+              <Image
+                src="/qcr-logo-white.png"
+                alt="Quail Creek Range"
+                width={48}
+                height={48}
+                className="w-12 h-12"
+              />
+              <span className="font-serif font-semibold text-xl">
+                Quail Creek Range
+              </span>
             </div>
             <p className="text-neutral-100 leading-relaxed">
-              North Texas' premier outdoor shooting range. Open to the public with professional instruction and
-              state-of-the-art facilities.
+              North Texas' premier outdoor shooting range. Open to the public
+              with professional instruction and state-of-the-art facilities.
             </p>
           </div>
 
           {/* Contact Info */}
           <div>
-            <h3 className="font-serif font-semibold text-lg mb-4 text-white">Contact</h3>
+            <h3 className="font-serif font-semibold text-lg mb-4 text-white">
+              Contact
+            </h3>
             <div className="space-y-3">
               <a
                 href="tel:940-648-3356"
@@ -51,9 +62,13 @@ export default function Footer() {
 
           {/* Hours */}
           <div>
-            <h3 className="font-serif font-semibold text-lg mb-4 text-white">Hours of Operation</h3>
+            <h3 className="font-serif font-semibold text-lg mb-4 text-white">
+              Hours of Operation
+            </h3>
             <div className="text-neutral-100">
-              <div className="font-semibold text-white mb-2">Open to the Public</div>
+              <div className="font-semibold text-white mb-2">
+                Open to the Public
+              </div>
               <div>Tuesday - Sunday</div>
               <div>8:00 AM - 6:00 PM</div>
               <div className="mt-2 text-sm">Closed Mondays</div>
@@ -62,30 +77,47 @@ export default function Footer() {
 
           {/* Quick Links */}
           <div>
-            <h3 className="font-serif font-semibold text-lg mb-4 text-white">Quick Links</h3>
+            <h3 className="font-serif font-semibold text-lg mb-4 text-white">
+              Quick Links
+            </h3>
             <ul className="space-y-2">
               <li>
-                <a href="#ranges" className="text-neutral-100 hover:text-accent transition-colors">
+                <a
+                  href="#ranges"
+                  className="text-neutral-100 hover:text-accent transition-colors"
+                >
                   Our Ranges
                 </a>
               </li>
               <li>
-                <a href="#events" className="text-neutral-100 hover:text-accent transition-colors">
+                <a
+                  href="#events"
+                  className="text-neutral-100 hover:text-accent transition-colors"
+                >
                   Events & Deals
                 </a>
               </li>
               <li>
-                <a href="#" className="text-neutral-100 hover:text-accent transition-colors">
+                <a
+                  href="#"
+                  className="text-neutral-100 hover:text-accent transition-colors"
+                >
                   Range Rules
                 </a>
               </li>
               <li>
-                <a href="#" className="text-neutral-100 hover:text-accent transition-colors">
+                <a
+                  href="#"
+                  className="text-neutral-100 hover:text-accent transition-colors"
+                >
                   Pricing
                 </a>
               </li>
               <li>
-                <a href="#" className="text-neutral-100 hover:text-accent transition-colors">
+                <a
+                  href="#"
+                  className="text-neutral-100 hover:text-accent transition-colors"
+                >
                   FFL Transfers
                 </a>
               </li>
@@ -96,34 +128,37 @@ export default function Footer() {
         {/* Follow Us On */}
         <div className="border-t border-white/10 pt-12 pb-8 mb-8">
           <div className="text-center">
-            <h3 className="font-serif font-semibold text-2xl mb-6 text-white">Follow Us On:</h3>
+            <h3 className="font-serif font-semibold text-2xl mb-6 text-white">
+              Follow Us On:
+            </h3>
             <div className="flex flex-wrap justify-center items-center gap-6">
               <a
-                href="https://facebook.com/quailcreekrange"
-                target="_blank"
-                rel="noopener noreferrer"
+                href="#"
                 className="flex items-center justify-center w-16 h-16 bg-[#1877F2] hover:bg-[#1877F2]/90 rounded-lg transition-all hover:scale-110"
                 aria-label="Follow us on Facebook"
+                title={siteConfig.social.facebook}
               >
                 <Facebook className="w-8 h-8 text-white" fill="white" />
               </a>
               <a
-                href="https://instagram.com/quailcreekrange"
-                target="_blank"
-                rel="noopener noreferrer"
+                href="#"
                 className="flex items-center justify-center w-16 h-16 bg-gradient-to-br from-[#833AB4] via-[#FD1D1D] to-[#F77737] hover:opacity-90 rounded-lg transition-all hover:scale-110"
                 aria-label="Follow us on Instagram"
+                title={siteConfig.social.instagram}
               >
                 <Instagram className="w-8 h-8 text-white" />
               </a>
               <a
-                href="https://www.yelp.com/biz/quail-creek-range"
-                target="_blank"
-                rel="noopener noreferrer"
+                href="#"
                 className="flex items-center justify-center w-16 h-16 bg-[#D32323] hover:bg-[#D32323]/90 rounded-lg transition-all hover:scale-110"
                 aria-label="Review us on Yelp"
+                title={siteConfig.social.yelp}
               >
-                <svg className="w-16 h-16" viewBox="10.496 10.505 235.008 234.989" aria-hidden="true">
+                <svg
+                  className="w-16 h-16"
+                  viewBox="10.496 10.505 235.008 234.989"
+                  aria-hidden="true"
+                >
                   <g transform="translate(-373.642 -318.344)">
                     <path
                       fill="red"
@@ -154,13 +189,17 @@ export default function Footer() {
                 </svg>
               </a>
               <a
-                href="https://youtube.com/@quailcreekrange"
-                target="_blank"
-                rel="noopener noreferrer"
+                href="#"
                 className="flex items-center justify-center w-16 h-16 bg-[#FF0000] hover:bg-[#FF0000]/90 rounded-lg transition-all hover:scale-110"
                 aria-label="Subscribe on YouTube"
+                title={siteConfig.social.youtube}
               >
-                <svg className="w-16 h-16" viewBox="0 0 48 48" fill="none" aria-hidden="true">
+                <svg
+                  className="w-16 h-16"
+                  viewBox="0 0 48 48"
+                  fill="none"
+                  aria-hidden="true"
+                >
                   <rect width="48" height="48" fill="red" rx="24"></rect>
                   <path
                     fill="#fff"
@@ -176,9 +215,11 @@ export default function Footer() {
 
         {/* Bottom Bar */}
         <div className="border-t border-white/10 pt-8 text-center text-neutral-200 text-sm">
-          <p>© {new Date().getFullYear()} Quail Creek Range. All rights reserved.</p>
+          <p>
+            © {new Date().getFullYear()} Quail Creek Range. All rights reserved.
+          </p>
         </div>
       </div>
     </footer>
-  )
+  );
 }
