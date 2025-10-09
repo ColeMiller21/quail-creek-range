@@ -1,10 +1,10 @@
-import type { Metadata } from "next"
-import Hero from "@/components/hero"
-import EventsSlideshow from "@/components/events-slideshow"
-import RangesSection from "@/components/ranges-section"
-import TrainingSection from "@/components/training-section"
-import WeatherWidget from "@/components/weather-widget"
-import Gallery from "@/components/gallery"
+import type { Metadata } from "next";
+import Hero from "@/components/hero";
+import EventsSlideshow from "@/components/events-slideshow";
+import RangesSection from "@/components/ranges-section";
+import TrainingSection from "@/components/training-section";
+import WeatherWidget from "@/components/weather-widget";
+import Gallery from "@/components/gallery";
 
 export const metadata: Metadata = {
   title: "Quail Creek Range | North Texas Premier Outdoor Shooting Range",
@@ -18,8 +18,16 @@ export const metadata: Metadata = {
       "Outdoor shooting range in Northlake, Texas offering pistol, rifle, and archery ranges plus professional training courses.",
     type: "website",
     locale: "en_US",
+    images: [
+      {
+        url: "/quail-creek-range-opengraph.png",
+        width: 1200,
+        height: 630,
+        alt: "Quail Creek Range - North Texas Premier Outdoor Shooting Range",
+      },
+    ],
   },
-}
+};
 
 export default function Home() {
   return (
@@ -31,5 +39,5 @@ export default function Home() {
       <WeatherWidget />
       <Gallery />
     </main>
-  )
+  );
 }

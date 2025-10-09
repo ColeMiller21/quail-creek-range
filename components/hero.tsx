@@ -1,15 +1,15 @@
-"use client"
+"use client";
 
-import { ChevronDown } from "lucide-react"
-import Image from "next/image"
+import { ChevronDown } from "lucide-react";
+import Image from "next/image";
 
 export default function Hero() {
   const scrollToContent = () => {
     window.scrollTo({
       top: window.innerHeight,
       behavior: "smooth",
-    })
-  }
+    });
+  };
 
   return (
     <section id="home" className="relative h-screen w-full overflow-hidden">
@@ -40,7 +40,7 @@ export default function Hero() {
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <a
-              href="#ranges"
+              href="/our-ranges"
               className="bg-accent hover:bg-accent/90 text-white px-8 py-4 rounded-lg font-semibold text-lg transition-all hover:scale-105"
             >
               Explore Our Ranges
@@ -58,5 +58,5 @@ export default function Hero() {
         </button>
       </div>
     </section>
-  )
+  );
 }
