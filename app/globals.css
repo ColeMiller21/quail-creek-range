@@ -153,8 +153,14 @@
   animation: slideIn 0.6s ease-out forwards;
 }
 
-/* Smooth transitions */
-* {
+/* Scoped smooth transitions (avoid universal selector to prevent animation glitches) */
+a,
+button,
+input,
+select,
+textarea,
+summary,
+[data-transition] {
   transition-property: color, background-color, border-color, opacity;
   transition-duration: 200ms;
   transition-timing-function: ease-in-out;
@@ -162,7 +168,11 @@
 
 /* Hero overlay */
 .hero-overlay {
-  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.6));
+  background: linear-gradient(
+    to bottom,
+    rgba(0, 0, 0, 0.4),
+    rgba(0, 0, 0, 0.6)
+  );
 }
 
 /* Glass effect for navigation */
