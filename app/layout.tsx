@@ -5,6 +5,7 @@ import Navigation from "@/components/navigation";
 import Footer from "@/components/footer";
 import { ScrollToTop } from "@/components/scroll-to-top";
 import { BackToTop } from "@/components/back-to-top";
+import { PreviewDialog } from "@/components/preview-dialog";
 
 const geistSans = Geist({
   subsets: ["latin"],
@@ -47,6 +48,7 @@ export default function RootLayout({
         {children}
         <Footer />
         <BackToTop />
+        <PreviewDialog />
       </body>
     </html>
   );

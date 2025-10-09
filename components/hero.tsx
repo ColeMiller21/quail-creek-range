@@ -16,11 +16,11 @@ export default function Hero() {
       {/* Background Image */}
       <div className="absolute inset-0">
         <Image
-          src="/outdoor-shooting-range-with-covered-shooting-bays-.jpg"
+          src="/cqr-bg.avif"
           alt="Quail Creek Range"
           fill
           priority
-          className="object-cover"
+          className="object-cover object-top md:object-center"
           quality={90}
         />
         <div className="hero-overlay absolute inset-0" />
