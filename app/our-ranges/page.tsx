@@ -1,8 +1,8 @@
-import type { Metadata } from "next"
-import Image from "next/image"
-import Link from "next/link"
-import { Target, Crosshair, Shield, Bot as Bow } from "lucide-react"
-import { Card, CardContent } from "@/components/ui/card"
+import type { Metadata } from "next";
+import Image from "next/image";
+import Link from "next/link";
+import { Target, Crosshair, Shield, Bot as Bow } from "lucide-react";
+import { Card, CardContent } from "@/components/ui/card";
 
 export const metadata: Metadata = {
   title: "Our Ranges | Quail Creek Range - Northlake, TX Shooting Facility",
@@ -16,7 +16,7 @@ export const metadata: Metadata = {
       "Explore our world-class shooting facilities including 100-yard rifle range, pistol bays, police range, and archery range.",
     type: "website",
   },
-}
+};
 
 const ranges = [
   {
@@ -67,7 +67,12 @@ const ranges = [
     icon: Shield,
     description:
       "The Police Range is a range to be used by active law enforcement agents. The range is also used for LTC qualifying. It is an open range with a bench behind the range under trees.",
-    features: ["Active law enforcement use", "LTC qualifying", "Open range design", "Shaded bench area"],
+    features: [
+      "Active law enforcement use",
+      "LTC qualifying",
+      "Open range design",
+      "Shaded bench area",
+    ],
     image: "/ranges/police-range-1.avif",
   },
   {
@@ -84,7 +89,7 @@ const ranges = [
     ],
     image: "/ranges/archery-range.avif",
   },
-]
+];
 
 export default function OurRangesPage() {
   return (
@@ -101,10 +106,10 @@ export default function OurRangesPage() {
           priority
         />
         <div className="container mx-auto px-4 relative z-10 text-center pt-32">
-          <h1 className="font-serif text-5xl md:text-6xl font-bold text-white mb-4 animate-in fade-in slide-in-from-bottom-4 duration-700">
+          <h1 className="font-serif text-5xl md:text-6xl font-bold text-white mb-4">
             Our Ranges
           </h1>
-          <p className="text-xl text-white/90 max-w-2xl mx-auto animate-in fade-in slide-in-from-bottom-4 duration-700 delay-150">
+          <p className="text-xl text-white/90 max-w-2xl mx-auto">
             World-class shooting facilities for all skill levels
           </p>
         </div>
@@ -117,14 +122,26 @@ export default function OurRangesPage() {
             {ranges.map((range, index) => (
               <Card
                 key={range.id}
-                className="overflow-hidden border-border/50 hover:border-accent/50 transition-all duration-300 animate-in fade-in slide-in-from-bottom-4"
-                style={{ animationDelay: `${index * 100}ms` }}
+                className="overflow-hidden border-border/50 hover:border-accent/50 transition-all duration-300"
               >
                 <CardContent className="p-0">
-                  <div className={`grid md:grid-cols-2 gap-0 ${index % 2 === 1 ? "md:grid-flow-dense" : ""}`}>
+                  <div
+                    className={`grid md:grid-cols-2 gap-0 ${
+                      index % 2 === 1 ? "md:grid-flow-dense" : ""
+                    }`}
+                  >
                     {/* Image */}
-                    <div className={`relative h-80 md:h-auto ${index % 2 === 1 ? "md:col-start-2" : ""}`}>
-                      <Image src={range.image || "/placeholder.svg"} alt={range.title} fill className="object-cover" />
+                    <div
+                      className={`relative h-80 md:h-auto ${
+                        index % 2 === 1 ? "md:col-start-2" : ""
+                      }`}
+                    >
+                      <Image
+                        src={range.image || "/placeholder.svg"}
+                        alt={range.title}
+                        fill
+                        className="object-cover"
+                      />
                       <div className="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent" />
                     </div>
 
@@ -134,16 +151,25 @@ export default function OurRangesPage() {
                         <div className="p-3 bg-accent/10 rounded-lg">
                           <range.icon className="w-6 h-6 text-accent" />
                         </div>
-                        <h2 className="font-serif text-3xl font-bold text-foreground">{range.title}</h2>
+                        <h2 className="font-serif text-3xl font-bold text-foreground">
+                          {range.title}
+                        </h2>
                       </div>
 
-                      <p className="text-muted-foreground text-lg leading-relaxed mb-6">{range.description}</p>
+                      <p className="text-muted-foreground text-lg leading-relaxed mb-6">
+                        {range.description}
+                      </p>
 
                       <div className="space-y-2">
-                        <h3 className="font-semibold text-foreground mb-3">Features:</h3>
+                        <h3 className="font-semibold text-foreground mb-3">
+                          Features:
+                        </h3>
                         <ul className="space-y-2">
                           {range.features.map((feature, idx) => (
-                            <li key={idx} className="flex items-start gap-2 text-muted-foreground">
+                            <li
+                              key={idx}
+                              className="flex items-start gap-2 text-muted-foreground"
+                            >
                               <span className="text-accent mt-1">•</span>
                               <span>{feature}</span>
                             </li>
@@ -163,9 +189,12 @@ export default function OurRangesPage() {
       <section className="py-20 relative overflow-hidden bg-[#4a5d3f]">
         <div className="absolute inset-0 bg-primary/80" />
         <div className="container mx-auto px-4 relative z-10 text-center">
-          <h2 className="font-serif text-4xl font-bold text-white mb-6">Ready to Visit?</h2>
+          <h2 className="font-serif text-4xl font-bold text-white mb-6">
+            Ready to Visit?
+          </h2>
           <p className="text-xl text-white/90 mb-8 max-w-2xl mx-auto">
-            Open to the public Tuesday through Sunday, 8 AM to 6 PM. No membership required.
+            Open to the public Tuesday through Sunday, 8 AM to 6 PM. No
+            membership required.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Link
@@ -184,5 +213,5 @@ export default function OurRangesPage() {
         </div>
       </section>
     </main>
-  )
+  );
 }

@@ -1,5 +1,10 @@
-import type { Metadata } from "next"
-import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion"
+import type { Metadata } from "next";
+import {
+  Accordion,
+  AccordionContent,
+  AccordionItem,
+  AccordionTrigger,
+} from "@/components/ui/accordion";
 
 export const metadata: Metadata = {
   title: "FAQ - Frequently Asked Questions | Quail Creek Range",
@@ -7,7 +12,7 @@ export const metadata: Metadata = {
     "Find answers to common questions about Quail Creek Range including open carry policies, firearms allowed, age restrictions, ammunition rules, safety procedures, and more.",
   keywords:
     "shooting range FAQ, range rules, firearms questions, ammunition restrictions, safety procedures, Northlake Texas shooting range",
-}
+};
 
 const faqs = [
   {
@@ -42,23 +47,29 @@ const faqs = [
   },
   {
     question: "Why must I keep my muzzle below the top of the berm?",
-    answer: "Safety and state law requires that all rounds remain on our property.",
+    answer:
+      "Safety and state law requires that all rounds remain on our property.",
   },
   {
-    question: "Why am I required to unload my rifle magazine when I arrive at the range?",
-    answer: "So the Range Safety Officer can verify you have the correct ammunition for our ranges. (See FMJ).",
+    question:
+      "Why am I required to unload my rifle magazine when I arrive at the range?",
+    answer:
+      "So the Range Safety Officer can verify you have the correct ammunition for our ranges. (See FMJ).",
   },
   {
     question: "Where can I shoot my pistol-grip-only-shotgun?",
-    answer: "Only on the 7 yd. line of the pistol range due to the way it's intended to be shot.",
+    answer:
+      "Only on the 7 yd. line of the pistol range due to the way it's intended to be shot.",
   },
   {
     question: 'Can I shoot shotgun "shot" at your range?',
-    answer: "No. The pellets will ricochet and they do too much damage to the target boards. Only slugs are allowed.",
+    answer:
+      "No. The pellets will ricochet and they do too much damage to the target boards. Only slugs are allowed.",
   },
   {
     question: "Why can't I uncase my rifle on the back table?",
-    answer: "To prevent any loaded firearms coming out behind personnel on the firing line.",
+    answer:
+      "To prevent any loaded firearms coming out behind personnel on the firing line.",
   },
   {
     question: "Can I keep my brass?",
@@ -66,13 +77,15 @@ const faqs = [
       "Yes, however you may only pick up the brass that you bring to the range. Brass on the ground or left by others belongs to the range.",
   },
   {
-    question: "Why is there a height restriction for children shooting handguns?",
+    question:
+      "Why is there a height restriction for children shooting handguns?",
     answer:
       'The height restriction is based on the height of our shooting benches. We ask that children shooting be 4\'6" (54") in order to shoot.',
   },
   {
     question: "Why can't my child and I shoot at the same time?",
-    answer: "You can not properly supervise your child who is shooting if you are shooting.",
+    answer:
+      "You can not properly supervise your child who is shooting if you are shooting.",
   },
   {
     question: "Why can I not stand and shoot at the 100 yard range?",
@@ -80,7 +93,8 @@ const faqs = [
       "The 100 yard range is specifically designed to prevent rounds from going over the berm. Standing negates that design.",
   },
   {
-    question: "My rifle has been bore sighted only. Why can't I go directly to the 100 yard range?",
+    question:
+      "My rifle has been bore sighted only. Why can't I go directly to the 100 yard range?",
     answer: "Bore sighting is typically only good for 25 yards.",
   },
   {
@@ -121,15 +135,18 @@ const faqs = [
   },
   {
     question: "Are there caliber restrictions?",
-    answer: "Yes, no 50 BMG allowed. No BB guns or air guns with less than 1200 FPS velocity.",
+    answer:
+      "Yes, no 50 BMG allowed. No BB guns or air guns with less than 1200 FPS velocity.",
   },
   {
     question: "What distances are available?",
     answer: "Pistol - 7, 15, and 25 yards. Rifles - 25, 50, and 100 yards.",
   },
   {
-    question: "Why must I fill out a liability release form every time I come out to shoot?",
-    answer: "Our NRA insurance requires us to have a signed release for each visit.",
+    question:
+      "Why must I fill out a liability release form every time I come out to shoot?",
+    answer:
+      "Our NRA insurance requires us to have a signed release for each visit.",
   },
   {
     question: "Once I sign the Safety Release Form who is responsible?",
@@ -137,8 +154,10 @@ const faqs = [
       "You are responsible for your every action while at the Range. You are responsible for every round you fire and for any minors you signed for.",
   },
   {
-    question: "If I am with several shooters will I be guaranteed shooting positions together on the Range?",
-    answer: "No. The RSOs will make every attempt to accommodate you, but shooting spaces are first come first served.",
+    question:
+      "If I am with several shooters will I be guaranteed shooting positions together on the Range?",
+    answer:
+      "No. The RSOs will make every attempt to accommodate you, but shooting spaces are first come first served.",
   },
   {
     question: "Can I have more than one firearm at the shooting line?",
@@ -150,7 +169,8 @@ const faqs = [
       "Yes. The RSOs will do everything possible to accommodate handicapped patrons. If available, an ATV (Kawasaki) will be used to transport injured or handicapped patrons and their gear across the creek (workload permitting).",
   },
   {
-    question: "Can I shoot prone, kneeling, or practice using shooting sticks for a hunt?",
+    question:
+      "Can I shoot prone, kneeling, or practice using shooting sticks for a hunt?",
     answer:
       "If we are not too busy, the Range Master may allow you to fire from different positions. However the guns must return to the bench to be cleared during cease fires and must remain pointed in a safe directions when doing so. There are only 2 shooting positions available for shooting sticks (1 and 20).",
   },
@@ -158,10 +178,10 @@ const faqs = [
     question: "Do you have a family pricing plan?",
     answer: "Our pricing plan is $22 for adults and $17 for children under 15.",
   },
-]
+];
 
 export default function FAQPage() {
-  const allItemValues = faqs.map((_, index) => `item-${index}`)
+  const allItemValues = faqs.map((_, index) => `item-${index}`);
 
   return (
     <main className="min-h-screen bg-background">
@@ -170,11 +190,12 @@ export default function FAQPage() {
         <div className="absolute inset-0 bg-[#4a5d3f]" />
         <div className="absolute inset-0 bg-black/40" />
         <div className="container mx-auto px-4 relative z-10 text-center pt-32">
-          <h1 className="font-serif text-5xl md:text-6xl font-bold text-white mb-4 animate-in fade-in slide-in-from-bottom-4 duration-700">
+          <h1 className="font-serif text-5xl md:text-6xl font-bold text-white mb-4">
             Frequently Asked Questions
           </h1>
-          <p className="text-xl text-white/90 max-w-2xl mx-auto animate-in fade-in slide-in-from-bottom-4 duration-700 delay-150">
-            Find answers to common questions about our range, safety procedures, and policies
+          <p className="text-xl text-white/90 max-w-2xl mx-auto">
+            Find answers to common questions about our range, safety procedures,
+            and policies
           </p>
         </div>
       </section>
@@ -183,7 +204,11 @@ export default function FAQPage() {
       <section className="py-20 bg-background">
         <div className="container mx-auto px-4 max-w-4xl">
           {/* FAQ Accordion */}
-          <Accordion type="multiple" defaultValue={allItemValues} className="w-full space-y-4">
+          <Accordion
+            type="multiple"
+            defaultValue={allItemValues}
+            className="w-full space-y-4"
+          >
             {faqs.map((faq, index) => (
               <AccordionItem
                 key={index}
@@ -191,19 +216,26 @@ export default function FAQPage() {
                 className="bg-card border border-border rounded-lg px-6 shadow-sm hover:shadow-md transition-shadow"
               >
                 <AccordionTrigger className="text-left font-semibold text-foreground hover:text-accent py-4 hover:no-underline">
-                  <span className="text-accent mr-3 font-mono text-sm">{String(index + 1).padStart(2, "0")}</span>
+                  <span className="text-accent mr-3 font-mono text-sm">
+                    {String(index + 1).padStart(2, "0")}
+                  </span>
                   {faq.question}
                 </AccordionTrigger>
-                <AccordionContent className="text-muted-foreground pb-4 leading-relaxed">{faq.answer}</AccordionContent>
+                <AccordionContent className="text-muted-foreground pb-4 leading-relaxed">
+                  {faq.answer}
+                </AccordionContent>
               </AccordionItem>
             ))}
           </Accordion>
 
           {/* Contact CTA */}
           <div className="mt-16 text-center p-8 bg-muted rounded-lg border border-border">
-            <h2 className="font-serif text-2xl font-bold text-foreground mb-3">Still Have Questions?</h2>
+            <h2 className="font-serif text-2xl font-bold text-foreground mb-3">
+              Still Have Questions?
+            </h2>
             <p className="text-muted-foreground mb-6">
-              If you can't find the answer you're looking for, feel free to contact us directly.
+              If you can't find the answer you're looking for, feel free to
+              contact us directly.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <a
@@ -223,5 +255,5 @@ export default function FAQPage() {
         </div>
       </section>
     </main>
-  )
+  );
 }
