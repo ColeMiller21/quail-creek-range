@@ -14,10 +14,10 @@ export default function ParticipantAgreementPage() {
   return (
     <main className="min-h-screen">
       {/* Hero Section */}
-      <section className="relative h-[40vh] min-h-[300px] flex items-center justify-center bg-[#4a5d3f]">
+      <section className="relative h-[50vh] min-h-[400px] flex items-center justify-center bg-[#4a5d3f]">
         <div className="absolute inset-0 bg-black/40" />
         <div className="container mx-auto px-4 relative z-10 text-center pt-32">
-          <h1 className="font-serif text-4xl md:text-5xl font-bold text-white mb-4">
+          <h1 className="font-serif text-5xl md:text-6xl font-bold text-white mb-4">
             Participant Agreement
           </h1>
           <p className="text-xl text-white/90 max-w-2xl mx-auto">
