@@ -67,6 +67,7 @@ export default function Navigation() {
     },
     { href: "/training", label: "Training" },
     { href: "/ltc", label: "LTC" },
+    { href: "/gift-cards", label: "Gift Cards" },
     { href: "/directions", label: "Directions" },
     { href: "/faq", label: "FAQ" },
     {

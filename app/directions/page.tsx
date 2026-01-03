@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import Image from "next/image";
+import { CloudPanoEmbed } from "@/components/cloud-pano-embed";
 
 export const metadata: Metadata = {
   title: "Directions to Quail Creek Range | Northlake, TX",
@@ -23,6 +24,20 @@ export default function DirectionsPage() {
           <p className="text-xl text-white/90 max-w-2xl mx-auto">
             Find your way to Quail Creek Range in Northlake, Texas
           </p>
+        </div>
+      </section>
+
+      {/* Virtual Tour Section */}
+      <section className="py-12 bg-muted/30">
+        <div className="container mx-auto px-4">
+          <div className="max-w-6xl mx-auto">
+            <h2 className="text-3xl md:text-4xl font-serif font-bold text-center mb-8">
+              Virtual Tour
+            </h2>
+            <div className="bg-card rounded-lg shadow-lg overflow-hidden">
+              <CloudPanoEmbed />
+            </div>
+          </div>
         </div>
       </section>
 
