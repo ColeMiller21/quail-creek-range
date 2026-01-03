@@ -173,14 +173,18 @@ export default function LTCPage() {
                 LTC DATES
               </h2>
               <div className="space-y-4 text-center">
-                <div className="text-2xl font-bold text-accent">9/13/2025</div>
-                <div className="text-xl font-semibold text-muted-foreground italic">
-                  No Class in
-                  <br />
-                  October
-                </div>
-                <div className="text-2xl font-bold text-accent">11/8/2025</div>
-                <div className="text-2xl font-bold text-accent">12/13/2025</div>
+                <div className="text-2xl font-bold text-accent">01/10/2026</div>
+                <div className="text-2xl font-bold text-accent">02/14/2026</div>
+                <div className="text-2xl font-bold text-accent">03/14/2026</div>
+                <div className="text-2xl font-bold text-accent">04/11/2026</div>
+                <div className="text-2xl font-bold text-accent">05/09/2026</div>
+                <div className="text-2xl font-bold text-accent">06/13/2026</div>
+                <div className="text-2xl font-bold text-accent">07/11/2026</div>
+                <div className="text-2xl font-bold text-accent">08/08/2026</div>
+                <div className="text-2xl font-bold text-accent">09/12/2026</div>
+                <div className="text-2xl font-bold text-accent">10/10/2026</div>
+                <div className="text-2xl font-bold text-accent">11/14/2026</div>
+                <div className="text-2xl font-bold text-accent">12/12/2026</div>
               </div>
             </Card>
 
@@ -218,9 +222,18 @@ export default function LTCPage() {
                       <SelectValue placeholder="Select a class date" />
                     </SelectTrigger>
                     <SelectContent>
-                      <SelectItem value="9/13/2025">Saturday, September 13, 2025</SelectItem>
-                      <SelectItem value="11/8/2025">Saturday, November 8, 2025</SelectItem>
-                      <SelectItem value="12/13/2025">Saturday, December 13, 2025</SelectItem>
+                      <SelectItem value="01/10/2026">Friday, January 10, 2026</SelectItem>
+                      <SelectItem value="02/14/2026">Saturday, February 14, 2026</SelectItem>
+                      <SelectItem value="03/14/2026">Saturday, March 14, 2026</SelectItem>
+                      <SelectItem value="04/11/2026">Saturday, April 11, 2026</SelectItem>
+                      <SelectItem value="05/09/2026">Saturday, May 9, 2026</SelectItem>
+                      <SelectItem value="06/13/2026">Saturday, June 13, 2026</SelectItem>
+                      <SelectItem value="07/11/2026">Saturday, July 11, 2026</SelectItem>
+                      <SelectItem value="08/08/2026">Saturday, August 8, 2026</SelectItem>
+                      <SelectItem value="09/12/2026">Saturday, September 12, 2026</SelectItem>
+                      <SelectItem value="10/10/2026">Saturday, October 10, 2026</SelectItem>
+                      <SelectItem value="11/14/2026">Saturday, November 14, 2026</SelectItem>
+                      <SelectItem value="12/12/2026">Saturday, December 12, 2026</SelectItem>
                     </SelectContent>
                   </Select>
                 </div>
